@@ -19,24 +19,6 @@ export class App extends Component {
     }));
   };
 
-  handlePositiveBack = () => {
-    this.setState(prevState => ({
-      good: prevState.good + 1,
-    }));
-  };
-
-  handleNeutralBack = () => {
-    this.setState(prevState => ({
-      neutral: prevState.neutral + 1,
-    }));
-  };
-
-  handleBadBack = () => {
-    this.setState(prevState => ({
-      bad: prevState.bad + 1,
-    }));
-  };
-
   countTotalFeedback = () => {
     return this.state.bad + this.state.neutral + this.state.good;
   };
